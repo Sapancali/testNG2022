@@ -9,6 +9,15 @@ public class DefaultPage {
     public DefaultPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy (xpath = "//span[@class='hidder-408]")
+    @FindBy (xpath = "//span[@class='hidden-480']")
     public WebElement addUserButton;
+
+    @FindBy(xpath = "//span[.='Hotel Management']")
+    public WebElement hotelManagement;
+
+    @FindBy(linkText = "Hotel Rooms")
+    public WebElement hotelRoom;
+
+    @FindBy(partialLinkText = "//span[@class='hidden-480']")
+    public WebElement addHotelRoomLink;
 }

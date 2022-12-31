@@ -12,6 +12,7 @@ public class Day09_C5_FirstConfigTest {
     public void firstConfigTest() throws InterruptedException {
 //   app_url  'e git
         //Driver.getDriver().get("http://www.carettahotel.com/")
+
         Driver.getDriver().get(ConfigReader.getProperty("app_url"));
         Thread.sleep(5000);
 

@@ -47,6 +47,7 @@ public class Day10_C8_PositiveLoginTest {
         boolean logedIn= defaultPage.addUserButton.isDisplayed();
         Assert.assertTrue(logedIn);
 
+        Driver.closeDriver();
 
     }
 }
