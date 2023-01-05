@@ -28,7 +28,7 @@ public class Driver {
 //        return driver;
 //    }
 
-      if(driver==null){ // eger driver calısmıyorsa
+      if(driver==null){ // eger driver calısmıyorsa - calıstır
           switch (ConfigReader.getProperty("browser")){
               case "chrome":
                   WebDriverManager.chromedriver().setup();

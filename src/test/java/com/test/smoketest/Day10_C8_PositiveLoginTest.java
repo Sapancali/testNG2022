@@ -17,7 +17,7 @@ public class Day10_C8_PositiveLoginTest {
         //1-page objet olustur== mainPage ve LoginPage
         //2-test class oluştur
         // page object oluştur
-        //  -magnPage objectleri oluştur
+        //  -mainPage objectleri oluştur
         //  - loginPage objectleri oluştur
 
         MainPage mainPage=new MainPage();
