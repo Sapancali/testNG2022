@@ -60,8 +60,8 @@
       <recent name="C:\Users\ustab\IdeaProjects\testNG2022\src\test\java\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Day14_C16_DataProvider3.managerLoginTest">
-    <configuration name="Day13_C13_WriteExcel" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Day13_C14_LoginSmokeTest">
+    <configuration name="Day13_C13_WriteExcel.writeExcel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testNG2022" />
       <extension name="coverage">
         <pattern>
@@ -71,25 +71,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.excelautomation" />
       <option name="MAIN_CLASS_NAME" value="com.excelautomation.Day13_C13_WriteExcel" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="writeExcel" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day14_C15_JSUtilTest.changeColor" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Day13_C14_LoginSmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testNG2022" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javascriptexcecutor.*" />
+          <option name="PATTERN" value="com.excelautomation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javascriptexcecutor" />
-      <option name="MAIN_CLASS_NAME" value="com.javascriptexcecutor.Day14_C15_JSUtilTest" />
-      <option name="METHOD_NAME" value="changeColor" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="com.excelautomation" />
+      <option name="MAIN_CLASS_NAME" value="com.excelautomation.Day13_C14_LoginSmokeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Day13_C14_LoginSmokeTest" />
+        <item itemvalue="TestNG.Day13_C13_WriteExcel.writeExcel" />
         <item itemvalue="TestNG.Day14_C16_DataProvider3.managerLoginTest" />
         <item itemvalue="TestNG.Day14_C16_DataProvider2.managerLoginTest" />
         <item itemvalue="TestNG.Day14_C16_DataProvider1.managerInfo" />
-        <item itemvalue="TestNG.Day13_C13_WriteExcel" />
-        <item itemvalue="TestNG.Day14_C15_JSUtilTest.changeColor" />
       </list>
     </recent_temporary>
   </component>
