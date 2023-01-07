@@ -37,6 +37,7 @@ public class Day11_C9_NegativeLoginTest {
     System.out.println(loginPage.errorMessage.getText());
     Assert.assertTrue(loginPage.errorMessage.getText().contains("Wrong password"));
 
+    Driver.closeDriver();
 
 }
     @Test
@@ -65,7 +66,7 @@ password  : Manager1!
         //Then Kullanıcı ‘Try again please’ mesajını verify eder
         System.out.println(loginPage.errorMessage.getText());
         Assert.assertTrue(loginPage.errorMessage.getText().contains("Try again please"));
-
+    Driver.closeDriver();
 
     }
     @Test

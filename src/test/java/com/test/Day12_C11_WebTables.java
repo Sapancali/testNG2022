@@ -49,7 +49,7 @@ public class Day12_C11_WebTables {
     defaultPage.hotelManagement.click();
 
     // Hotel Rooms'a Click yapar
-    defaultPage.hotelRoom.click();
+    defaultPage.hotelRooms.click();
 }
 //    test method: entireTable() ve tum header'lari yazdir
     @Test

@@ -16,8 +16,8 @@ public class DefaultPage {
     public WebElement hotelManagement;
 
     @FindBy(linkText = "Hotel Rooms")
-    public WebElement hotelRoom;
+    public WebElement hotelRooms;
 
-    @FindBy(partialLinkText = "//span[@class='hidden-480']")
+    @FindBy(xpath = "//span[@class='hidden-480']")
     public WebElement addHotelRoomLink;
 }

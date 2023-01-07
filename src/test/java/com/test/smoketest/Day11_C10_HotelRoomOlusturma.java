@@ -45,7 +45,7 @@ public class Day11_C10_HotelRoomOlusturma {
         defaultPage.hotelManagement.click();
 
         //hotel room click yap
-        defaultPage.hotelRoom.click();
+        defaultPage.hotelRooms.click();
 
         //add hotelRoom a clikc yap
         hotelRoomPage.addHotelRoomLink.click();
@@ -95,7 +95,7 @@ public class Day11_C10_HotelRoomOlusturma {
 
  //       WebDriverWait wait=new WebDriverWait(Driver.getDriver(),5);
  //       wait.until(ExpectedConditions.visibilityOf(hotelRoomPage.popupMessage));
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         Assert.assertTrue(hotelRoomPage.popupMessage.getText().contains("HotelRoom was inserted successfully"));
 
         //ok click yap
