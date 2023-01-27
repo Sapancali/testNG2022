@@ -21,15 +21,18 @@ public class Day11_C9_NegativeLoginTest {
     Driver.getDriver().get(ConfigReader.getProperty("app_url_login"));
 
     LoginPage loginPage=new LoginPage();
+try {
     loginPage.advancedLink.click();
     loginPage.proceedLink.click();
+}catch (Exception e){
 
+}
 //    When Kullanıcı sadece yanlış password girer
 //    loginPage.username.sendKeys("manager");
 //    loginPage.password.sendKeys("Manage");
 
     loginPage.username.sendKeys(ConfigReader.getProperty("manager_username"));
-    loginPage.password.sendKeys(ConfigReader.getProperty("wron_manager_possword"));
+    loginPage.password.sendKeys(ConfigReader.getProperty("wrong_manager_password"));
 
     loginPage.loginButton.click();
 
@@ -88,7 +91,7 @@ password  : Manage!
 
         //When Kullanıcı hem yanlış username ve password girer
         loginPage.username.sendKeys(ConfigReader.getProperty("wrong_manager_username"));
-        loginPage.password.sendKeys(ConfigReader.getProperty("wron_manager_possword"));
+        loginPage.password.sendKeys(ConfigReader.getProperty("wrong_manager_password"));
         loginPage.loginButton.click();
 
 //Then Kullanıcı ‘Username or password is incorrect, please correct them and try again’ mesajını verify eder

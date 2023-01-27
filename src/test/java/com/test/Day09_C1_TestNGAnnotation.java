@@ -47,7 +47,7 @@ public class Day09_C1_TestNGAnnotation {
     public void test4(){
         System.out.println("Test4");
     }
-    @Test (priority = -3)
+    @Test (groups ="test-group-1" , priority = -3)
     public void test5(){
         System.out.println("Test5");
     }

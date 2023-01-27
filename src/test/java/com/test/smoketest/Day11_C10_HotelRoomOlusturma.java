@@ -26,10 +26,12 @@ public class Day11_C10_HotelRoomOlusturma {
     @BeforeMethod
     public void setUp(){
         Driver.getDriver().get(ConfigReader.getProperty("app_url_login"));
+try {
+    loginPage.advancedLink.click();
+    loginPage.proceedLink.click();
+}catch (Exception e){
 
-        loginPage.advancedLink.click();
-        loginPage.proceedLink.click();
-
+}
         loginPage.username.sendKeys(ConfigReader.getProperty("manager_username"));
         loginPage.password.sendKeys(ConfigReader.getProperty("manager_password"));
         loginPage.loginButton.click();

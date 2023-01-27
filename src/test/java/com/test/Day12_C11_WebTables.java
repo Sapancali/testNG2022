@@ -52,7 +52,7 @@ public class Day12_C11_WebTables {
     defaultPage.hotelRooms.click();
 }
 //    test method: entireTable() ve tum header'lari yazdir
-    @Test
+    @Test (groups ="test-group-1" )
     public void entireTable(){
    // setUp();
         System.out.println("Tum Tablo");

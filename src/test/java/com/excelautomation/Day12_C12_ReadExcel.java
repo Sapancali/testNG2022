@@ -41,11 +41,12 @@ public class Day12_C12_ReadExcel {
   //  dosyayı aç
 
         FileInputStream fileInputStream=new FileInputStream(path);
+
         //fileinputstream kullanarak workbook'u ac
 
         Workbook workbook= WorkbookFactory.create(fileInputStream);
 
-        // ilk sheet i aç
+        // ilk worksheet i aç
         Sheet sheet= workbook.getSheetAt(0); // sheet sayfaları "0" indeksten başlar
 
         // ilk row a git
@@ -57,11 +58,12 @@ public class Day12_C12_ReadExcel {
 
         // ilk rowdaki ikinci cell e git ve yazdır
         //1. yol
- //       Row row=sheet.getRow(1);
- //       Cell cell21=row2.g
+//        Row row2 = sheet.getRow(1);
+//        Cell cell21 = row2.getCell(1);
+//        System.out.println(cell21);
 
         //2. yol
-        Cell row1sell2= sheet.getRow(4).getCell(1);
+        Cell row1sell2= sheet.getRow(0).getCell(1);
         System.out.println(row1sell2);
 
 //        2nd row'daki ilk cell'e git ve datanin ABD'ye esit oldugunu assert e
@@ -83,6 +85,7 @@ public class Day12_C12_ReadExcel {
     //Kullanilan row sayisini bul
         int kullanilanRowSayisi= sheet.getPhysicalNumberOfRows();
         System.out.println(kullanilanRowSayisi);
+
 
     //Ulke ve baskent key-value ciftlerini map object olarak yazdir
     Map<String,String> dunyaBaskentleri=new HashMap<>();
@@ -115,6 +118,7 @@ public class Day12_C12_ReadExcel {
 
     // excelUtil class okumak için önce bir nesne olusturduk
     ExcelUtil excelUtil=new ExcelUtil(path,sheetName);
+
     // ExcelUtil deki methodları cağırabiliriz
 
     System.out.println(excelUtil.getDataList());

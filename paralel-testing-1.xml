@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Arcane-Test_Suite" parallel="classes" thread-count="3" >
+    <test name="smoke-test">
+        <classes>
+            <class name="com.paraleltesting.ManagerLogin"></class>
+            <class name="com.paraleltesting.SearchItem"></class>
+            <class name="com.paraleltesting.WebTables"></class>
+        </classes>
+    </test>
+</suite>
